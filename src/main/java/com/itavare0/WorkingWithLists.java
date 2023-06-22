@@ -14,5 +14,11 @@ public class WorkingWithLists {
         System.out.println(colors.contains("red"));
         System.out.println(colors.contains("pink"));
         System.out.println(colors);
+
+        for(String color : colors) {
+            System.out.println(color);
+        }
+
+        colors.forEach(System.out::println);
     }
 }

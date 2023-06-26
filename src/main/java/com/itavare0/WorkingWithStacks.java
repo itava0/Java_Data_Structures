@@ -9,5 +9,17 @@ public class WorkingWithStacks {
         stack.push(2);
         stack.push(3);
         System.out.println(stack.peek());
+
+        Stack<String> stack1 = new Stack<>();
+
+        stack1.push("Minecraft");
+        stack1.push("Skyrim");
+        stack1.push("Doom");
+        stack1.push("Call of Duty");
+
+        stack1.pop();
+        stack1.search("Skyrim");
+
+        System.out.println(stack1);
     }
 }

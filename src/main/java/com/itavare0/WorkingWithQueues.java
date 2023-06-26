@@ -10,11 +10,19 @@ public class WorkingWithQueues {
         supermakert.add(new Person("Maria", 18));
         supermakert.add(new Person("Ali", 23));
 
-        System.out.println(supermakert.size());
-        System.out.println(supermakert.peek());
-        System.out.println(supermakert.poll());
-        System.out.println(supermakert.size());
-        System.out.println(supermakert.peek());
+//        System.out.println(supermakert.size());
+//        System.out.println(supermakert.peek());
+//        System.out.println(supermakert.poll());
+//        System.out.println(supermakert.size());
+//        System.out.println(supermakert.peek());
+
+        Queue<String> queue = new LinkedList<>();
+        queue.offer("Karen");
+        queue.offer("Chad");
+        queue.offer("Steve");
+        queue.offer("Harold");
+
+        System.out.println(queue);
     }
 
     static record Person(String name, int age) {
